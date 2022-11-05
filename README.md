@@ -47,10 +47,14 @@ The existing R script was updated to import the CSV data file and build a table.
 A summary of the total collection of data was created to determine whether the entire body of data would conform to the design specification - which is that the variance of the coil springs must not exceed 100 psi (pounds per square inch).
 
 The total summary table shows that the entire data collection suggests that all of these products conform to specification.
+
 ![Total Summary table](Resources/total-summary.png)
 
+
 A second table was created that grouped the statistical data according to the manufacturing lots.  This data indicates a problem within lot 3.
+
 ![Lot Summary table](Resources/lot-summary.png)
+
 
 The measurements within lot 3 indicate a much greater variance than the other two lots, and also exceeds the design specification by 70 psi.
 
@@ -61,7 +65,9 @@ A T-test was written to test whether the mean of the entire dataset matched the 
 
 Three more T-tests were written to test whether the mean from each manufacturing lot matched the target population mean of 1500 psi.
 The results are below:
+
 ![T-Tests](Resources/t-test.png)
+
 
 For each t-test, the primary statistic is the computed p-value which indicates whether the computed mean is statistically inside or outside of the confidence interval.
 
@@ -108,6 +114,7 @@ Study Data Requirements:
 * The variance of the input data should be similar.
 
 Study Statistical Analysis:
+
 The actual statistical analysis for this study should be determined after the metrics are chosen.
 
 An example of this proposed analysis is to generate a correlation matrix for the measures to see if there is any relationship amongst them according to the data.
